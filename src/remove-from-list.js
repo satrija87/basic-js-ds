@@ -1,6 +1,6 @@
 const { NotImplementedError } = require("../extensions/index.js");
 
-// const { ListNode } = require('../extensions/list-node.js');
+const { ListNode } = require("../extensions/list-node.js");
 
 /**
  * Given a singly linked list of integers l and an integer k,
@@ -22,9 +22,25 @@ const { NotImplementedError } = require("../extensions/index.js");
  *   }
  * }
  */
+// function createCounter() {
+//   let count = 0;
+//   function increment() {
+//    return count++;
+//   }
+//   function decrement() {
+//     return count--;
+//   }
+//   return { count, increment, decrement };
+// }
+// const result = createCounter();
+// console.log(result.increment());
 
-function removeKFromList(l, k) {}
+function change(x) {
+  x = 2 * x;
+  console.log("x in change:", x);
+}
 
-module.exports = {
-  removeKFromList,
-};
+let n = 10;
+console.log("n before change:", n); // n before change: 10
+change(n); // x in change: 20
+console.log("n after change:", n);
